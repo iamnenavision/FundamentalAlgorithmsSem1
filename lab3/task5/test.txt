@@ -1,0 +1,5 @@
+10 Sasha Ivanov 4 M8O-213B 4 5 4 5 5
+5 Nassim Taleb 2 M8O-213B 3 4 3 5 5
+4 Danila Ivanov 2 M4O-212B 4 4 3 5 5
+9 Vasyan Revolutionerovich 2 M8O-213B 5 5 5 5 5
+3 Timofey Berindikin 2 M7O0-213B 2 2 2 2 5
