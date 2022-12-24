@@ -9,9 +9,7 @@ int is_space(char c)
 }
 int main(int argc,char*argv[]) 
     
-    
 {
-    
     
     if(argc==1) 
     
@@ -83,6 +81,12 @@ int main(int argc,char*argv[])
     char c= ' ';
     char _c;
     char*num=(char*) malloc(sizeof(char) *START_LEN);
+    if(num==NULL)
+    {
+         printf("Not enough memory!\n");
+        return 1;
+    }
+    
     
     while(_c!=EOF) 
     {
