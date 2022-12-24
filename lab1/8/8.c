@@ -1,6 +1,5 @@
 #include<stdio.h> 
-#include "arguments.c"
-#include "array.c"
+
 #define START_LEN 8
 #define ABS 1000
 int is_space(char c) 
@@ -81,6 +80,7 @@ int main(int argc,char*argv[])
     char c= ' ';
     char _c;
     char*num=(char*) malloc(sizeof(char) *START_LEN);
+    char*ptr1;
     if(num==NULL)
     {
          printf("Not enough memory!\n");
@@ -98,7 +98,7 @@ int main(int argc,char*argv[])
             {
                 cur_len*=2;
     
-                char*ptr1=(char*) realloc(num,cur_len);
+                *ptr1=(char*) realloc(num,cur_len);
                 if(ptr1==NULL) 
     
                 {
@@ -140,10 +140,10 @@ int main(int argc,char*argv[])
     }
     free(num);
     int success=0;
-    
+    int*new_arr;
     if(*flag== 'a' || *flag== 'b') 
     {
-        int*new_arr=(int*) malloc(sizeof(int) *size);
+        *new_arr=(int*) malloc(sizeof(int) *size);
     
         if(*flag== 'a' ? odd_indexes(arr,new_arr,&size) ==0
                          :even_nums(arr,new_arr,&size) ==0) 
