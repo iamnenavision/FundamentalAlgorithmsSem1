@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
             {
                 cur_len *= 2;
                 
-                ptr1 = realloc(num, count * sizeof(int));
+                ptr1 = (char *) realloc(num, cur_len);
                 if (ptr1 == NULL) // reallocated pointer ptr1
                 {       
                  printf("Not enough memory!\n");
@@ -103,9 +103,6 @@ int main(int argc, char *argv[])
                 {
                   num = ptr1;    
                   }
-                num = realloc(num, cur_len);
-                
-=
                 
             }
             *(num + it++) = c;
