@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "file_work.c"
-#include "arguments.c"
+#include "filelib.c"
+#include "args.c"
 
 
 int main(int argc, char *argv[])
