@@ -87,12 +87,26 @@ int main(int argc, char *argv[])
             if (it == cur_len)
             {
                 cur_len *= 2;
-                num = realloc(num, cur_len);
-                if (num == NULL)
-                {
-                    printf("Not enough memory!\n");
-                    return 1;
+                
+                ptr1 = realloc(num, count * sizeof(int));
+                if (ptr1 == NULL) // reallocated pointer ptr1
+                {       
+                 printf("Not enough memory!\n");
+                 for (i=0;i<START_LEN;i++)
+                 {
+                     free(num[i]);
+                 }
+                 
+                return 1;
                 }
+                else
+                {
+                  ptr = ptr1;           // the reallocation succeeded, we can overwrite our original pointer now
+                  }
+                num = realloc(num, cur_len);
+                
+=
+                
             }
             *(num + it++) = c;
         }
