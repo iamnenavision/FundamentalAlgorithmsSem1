@@ -5,6 +5,8 @@
 #include "nums.c"
 #include "args.c"
 #define START_LEN 5
+
+
 int is_space(char c) 
 {
     return c== '\n' || c== ' ' || c== '\t';
