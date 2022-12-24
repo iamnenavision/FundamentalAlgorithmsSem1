@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "arguments.c"
+#include "args.c"
 
 
 #define ROWS 3
