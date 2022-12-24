@@ -92,7 +92,7 @@ int main(int argc, char *argv[])
     }
 
 
-    char **files = (char **) malloc(sizeof(char *) * FILES_COUNT);
+    char **files = (char **) calloc(sizeof(char *) * FILES_COUNT);
 
 
 
@@ -137,10 +137,6 @@ int main(int argc, char *argv[])
         if (files[file_it] == NULL)
         {
             printf("Memory cannot be allocated!\n");
-            for (int i = 0; i < file_it; i++)
-            {
-                free(files+i);
-            }
             free(files);
             return 2;
         }
