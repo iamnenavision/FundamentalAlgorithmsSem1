@@ -4,9 +4,9 @@
 #include<stdlib.h> 
     
     
-#include "solve.c"
+#include "s.c"
     
-#include "arguments.c"
+#include "args.c"
     
 int main(int argc,char*argv[]) 
     
