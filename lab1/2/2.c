@@ -1,11 +1,6 @@
-#include<stdio.h> 
-    
-    
+#include<stdio.h>    
 #include<stdlib.h> 
-    
-    
-#include "s.c"
-    
+#include "s.c"  
 #include "args.c"
     
 int main(int argc,char*argv[]) 
