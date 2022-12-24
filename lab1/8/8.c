@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
                 }
                 else
                 {
-                  ptr = ptr1;           // the reallocation succeeded, we can overwrite our original pointer now
+                  num = ptr1;    
                   }
                 num = realloc(num, cur_len);
                 
