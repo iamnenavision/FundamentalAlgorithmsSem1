@@ -88,11 +88,11 @@ int main(int argc, char *argv[])
             {
                 cur_len *= 2;
                 
-                ptr1 = (char *) realloc(num, cur_len);
+                char *ptr1 = (char *) realloc(num, cur_len);
                 if (ptr1 == NULL) // reallocated pointer ptr1
                 {       
                  printf("Not enough memory!\n");
-                 for (i=0;i<START_LEN;i++)
+                 for (int i=0;i<START_LEN;i++)
                  {
                      free(num[i]);
                  }
